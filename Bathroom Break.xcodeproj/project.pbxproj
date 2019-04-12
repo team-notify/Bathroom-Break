@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30E0F58C855D7DC62CCA23C9 /* Pods_Bathroom_Break.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE81CC52FD7169214544793 /* Pods_Bathroom_Break.framework */; };
+		543F054C22613E1300EF02C1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F054B22613E1300EF02C1 /* SignUpViewController.swift */; };
+		543F054E2261509C00EF02C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F054D2261509C00EF02C1 /* LoginViewController.swift */; };
 		54FD5D99225669ED008BE606 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD5D98225669ED008BE606 /* AppDelegate.swift */; };
-		54FD5D9B225669ED008BE606 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD5D9A225669ED008BE606 /* ViewController.swift */; };
 		54FD5D9E225669ED008BE606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FD5D9C225669ED008BE606 /* Main.storyboard */; };
 		54FD5DA0225669F3008BE606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54FD5D9F225669F3008BE606 /* Assets.xcassets */; };
 		54FD5DA3225669F3008BE606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FD5DA1225669F3008BE606 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30D48BCB42F1B3F18660C376 /* Pods-Bathroom Break.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bathroom Break.release.xcconfig"; path = "Target Support Files/Pods-Bathroom Break/Pods-Bathroom Break.release.xcconfig"; sourceTree = "<group>"; };
+		543F054B22613E1300EF02C1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		543F054D2261509C00EF02C1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		54FD5D95225669ED008BE606 /* Bathroom Break.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bathroom Break.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FD5D98225669ED008BE606 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		54FD5D9A225669ED008BE606 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		54FD5D9D225669ED008BE606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54FD5D9F225669F3008BE606 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54FD5DA2225669F3008BE606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54FD5DA4225669F3008BE606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78985DD2BEA5CC8CCA15FCDE /* Pods-Bathroom Break.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bathroom Break.debug.xcconfig"; path = "Target Support Files/Pods-Bathroom Break/Pods-Bathroom Break.debug.xcconfig"; sourceTree = "<group>"; };
+		9FE81CC52FD7169214544793 /* Pods_Bathroom_Break.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bathroom_Break.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30E0F58C855D7DC62CCA23C9 /* Pods_Bathroom_Break.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				54FD5D97225669ED008BE606 /* Bathroom Break */,
 				54FD5D96225669ED008BE606 /* Products */,
+				DFF5EBA13833D3F48AFA4D38 /* Pods */,
+				5EF4EE69C3D9F9EAF24726FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +64,31 @@
 			isa = PBXGroup;
 			children = (
 				54FD5D98225669ED008BE606 /* AppDelegate.swift */,
-				54FD5D9A225669ED008BE606 /* ViewController.swift */,
 				54FD5D9C225669ED008BE606 /* Main.storyboard */,
 				54FD5D9F225669F3008BE606 /* Assets.xcassets */,
 				54FD5DA1225669F3008BE606 /* LaunchScreen.storyboard */,
 				54FD5DA4225669F3008BE606 /* Info.plist */,
+				543F054B22613E1300EF02C1 /* SignUpViewController.swift */,
+				543F054D2261509C00EF02C1 /* LoginViewController.swift */,
 			);
 			path = "Bathroom Break";
+			sourceTree = "<group>";
+		};
+		5EF4EE69C3D9F9EAF24726FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FE81CC52FD7169214544793 /* Pods_Bathroom_Break.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFF5EBA13833D3F48AFA4D38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78985DD2BEA5CC8CCA15FCDE /* Pods-Bathroom Break.debug.xcconfig */,
+				30D48BCB42F1B3F18660C376 /* Pods-Bathroom Break.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54FD5DA7225669F3008BE606 /* Build configuration list for PBXNativeTarget "Bathroom Break" */;
 			buildPhases = (
+				ED8F84668460CB6A7F5A8D8F /* [CP] Check Pods Manifest.lock */,
 				54FD5D91225669ED008BE606 /* Sources */,
 				54FD5D92225669ED008BE606 /* Frameworks */,
 				54FD5D93225669ED008BE606 /* Resources */,
+				A9273513A44D67E453CE4489 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +159,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A9273513A44D67E453CE4489 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bathroom Break/Pods-Bathroom Break-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bathroom Break/Pods-Bathroom Break-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED8F84668460CB6A7F5A8D8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bathroom Break-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		54FD5D91225669ED008BE606 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54FD5D9B225669ED008BE606 /* ViewController.swift in Sources */,
+				543F054E2261509C00EF02C1 /* LoginViewController.swift in Sources */,
+				543F054C22613E1300EF02C1 /* SignUpViewController.swift in Sources */,
 				54FD5D99225669ED008BE606 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +363,7 @@
 		};
 		54FD5DA8225669F3008BE606 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78985DD2BEA5CC8CCA15FCDE /* Pods-Bathroom Break.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +382,7 @@
 		};
 		54FD5DA9225669F3008BE606 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30D48BCB42F1B3F18660C376 /* Pods-Bathroom Break.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
