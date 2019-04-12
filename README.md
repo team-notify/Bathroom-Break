@@ -46,6 +46,8 @@ Yelp for public restrooms in NYC
 
 ### 2. Screen Archetypes
 
+* Sign up screen
+    * Users can sign up
 * Login
    * Users can log in
    * Users can create an account
@@ -54,6 +56,8 @@ Yelp for public restrooms in NYC
    * Users will be shown closest public restrooms based on their current location
 * New Bathroom
     * Users can add a new bathroom location into the database
+* Edit Bathroom
+    * Users can update the bathroom listing
 * New Bathroom Rating
     * Users can submit a rating for the bathroom and add photos to it
 * Bathroom List View
@@ -74,9 +78,11 @@ Yelp for public restrooms in NYC
 * Settings
 
 **Flow Navigation** (Screen to Screen)
-
+* Sign up
+    * Map View
 * Login
-   * Map View
+    * Sign up
+    * Map View
 * Mapview
    * Bathroom List View
    * Bathroom Details
@@ -84,6 +90,8 @@ Yelp for public restrooms in NYC
 * New Bathroom
     * Bathroom Details
     * Map View
+* Edit Bathroom
+    * Bathroom Details
 * New Bathroom Rating
     * Bathroom Details
 * Bathroom List View
@@ -98,18 +106,84 @@ Yelp for public restrooms in NYC
     * Login
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
+
 <img src="https://i.imgur.com/vVtNbTl.jpg" width=600>
 
-### [BONUS] Digital Wireframes & Mockups
-
-### [BONUS] Interactive Prototype
-
 ## Schema 
-[This section will be completed in Unit 9]
+
 ### Models
-[Add table of models]
+
+
+#### User
+| Property | Type | Description |
+| -------- | -------- | -------- |
+| userID | Int     | unique identifier   |
+| username     | string     | username to log in     |
+| password     | string     | password to secure log in     |
+| profilePic     | File     | profile picture     |
+| email     | string     | user's email     |
+| createdAt     | datetime     | time in which user was created     |
+|lastUpdated| datetime | time in which the user was last edited |
+
+#### Bathroom
+|Property | Type | Description |
+| -------- | -------- | -------- |
+| bathroomID     | Int     | unique identifier     |
+| address     | string     | location of bathroom   |
+| addressLat   | string    | latitude of bathroom address|
+| addressLong   | string    | longitude of bathroom address| 
+| name | string | name of the bathroom location |
+|image | File|image of the bathroom |
+|overallRating | float |overall rating of the bathroom from 1-5|
+|cleanRating | float |cleanliness rating of the bathroom from 1-5|
+|handicapAccess | boolean | if there is handicap access|
+|unisex|boolean | whether bathroom is unisex|
+|multistalled |boolean | whether the bathroom has more than 1 toilet |
+|handryer|boolean |has a handryer|
+|public |boolean | whether the bathroom is public or privately owned|
+|needPurchase | boolean | whether a purchase is necessary to use the bathroom |
+|createdBy | Pointer to User| ID of the user that created the listing |
+|createdAt | datetime | time in which the bathroom listing was created |
+|lastUpdated | datetime | time in which the bathroom listing was last edited |
+|updatedBy| Pointer to User | user who last edited the post |
+
+
+
+#### Review
+|Property | Type | Description |
+| -------- | -------- | -------- |
+| reviewID | Int | unique identifier of the review |
+|image | File|image of the bathroom |
+|userID | Pointer to User|ID of the User that created the review|
+|bathroomID | Pointer to Bathroom | ID of the bathroom tied to the review|
+| experienceRating | float | experience rating for particular review from 1-5|
+|cleanRating | float |cleanliness rating of the bathroom from 1-5|
+|createdAt| datetime| when review was made|
+|description| string| actual review|
+
+
 ### Networking
-- [Add list of network requests by screen ]
+* Sign up screen
+    * (Create/POST) Create a new user in database
+* Login
+    * (Read/GET) Query to see if user exists in database
+* Map View
+    * (Read/GET) Get users location
+    * (Read/GET) Query for nearby bathroom locations
+* New Bathroom
+    * (Create/POST) Create a new bathroom listing in database
+* Edit Bathroom
+    * (Update/PUT) Update bathroom listing
+* New Bathroom Rating
+    * (Create/POST) Create a rating for an existing bathroom in database
+* Bathroom List View
+    * (Read/GET) Query for bathroom listings
+* Bathroom Details
+    * (Read/GET) Query for reviews of particular bathroom
+    * (Read/GET) Query for details of current bathroom
+* Settings
+    * N/A settings saved to NSDefaults
+* Profile
+    * (Update/PUT) Update user profile
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
