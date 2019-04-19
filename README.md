@@ -30,6 +30,10 @@ Yelp for public restrooms in NYC
 
 * Users can create an account
 * Users can login and logout
+<img src='http://g.recordit.co/LtknFMVkPS.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+
+
 * Users can stay logged in
 * Users can set their current location
 * Users will be shown closest public restrooms based on their current location
