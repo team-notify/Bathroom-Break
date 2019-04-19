@@ -28,14 +28,21 @@ Yelp for public restrooms in NYC
 
 **Required Must-have Stories**
 
-* Users can create an account
-* Users can login and logout
-* Users can stay logged in
-* Users can set their current location
-* Users will be shown closest public restrooms based on their current location
-* Users have a profile that shows their previous ratings
-* Users add new locations and can rate existing entries based on their experience at the restroom out of 5 stars, disability accessibility, purchase needed to use?, toilet paper ply, hand dryers, etc.
-* Ability to add and delete reviews
+- [X] Users can create an account
+- [X] Users can login and logout
+
+
+
+<img src='http://g.recordit.co/LtknFMVkPS.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+
+
+- [ ] Users can stay logged in
+- [ ]  Users can set their current location
+- [ ]  Users will be shown closest public restrooms based on their current location
+- [ ]  Users have a profile that shows their previous ratings
+- [ ]  Users add new locations and can rate existing entries based on their experience at the restroom out of 5 stars, disability accessibility, purchase needed to use?, toilet paper ply, hand dryers, etc.
+- [ ]  Ability to add and delete reviews
 
 
 
