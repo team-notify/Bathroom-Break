@@ -10,6 +10,7 @@
 		30E0F58C855D7DC62CCA23C9 /* Pods_Bathroom_Break.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE81CC52FD7169214544793 /* Pods_Bathroom_Break.framework */; };
 		543F054C22613E1300EF02C1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F054B22613E1300EF02C1 /* SignUpViewController.swift */; };
 		543F054E2261509C00EF02C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F054D2261509C00EF02C1 /* LoginViewController.swift */; };
+		5471AA9C22694B4700E2A6B7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5471AA9B22694B4700E2A6B7 /* SettingsViewController.swift */; };
 		54FD5D99225669ED008BE606 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD5D98225669ED008BE606 /* AppDelegate.swift */; };
 		54FD5D9E225669ED008BE606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FD5D9C225669ED008BE606 /* Main.storyboard */; };
 		54FD5DA0225669F3008BE606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54FD5D9F225669F3008BE606 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		30D48BCB42F1B3F18660C376 /* Pods-Bathroom Break.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bathroom Break.release.xcconfig"; path = "Target Support Files/Pods-Bathroom Break/Pods-Bathroom Break.release.xcconfig"; sourceTree = "<group>"; };
 		543F054B22613E1300EF02C1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		543F054D2261509C00EF02C1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5471AA9B22694B4700E2A6B7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		54FD5D95225669ED008BE606 /* Bathroom Break.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bathroom Break.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FD5D98225669ED008BE606 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54FD5D9D225669ED008BE606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				54FD5DA4225669F3008BE606 /* Info.plist */,
 				543F054B22613E1300EF02C1 /* SignUpViewController.swift */,
 				543F054D2261509C00EF02C1 /* LoginViewController.swift */,
+				5471AA9B22694B4700E2A6B7 /* SettingsViewController.swift */,
 			);
 			path = "Bathroom Break";
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				543F054E2261509C00EF02C1 /* LoginViewController.swift in Sources */,
 				543F054C22613E1300EF02C1 /* SignUpViewController.swift in Sources */,
 				54FD5D99225669ED008BE606 /* AppDelegate.swift in Sources */,
+				5471AA9C22694B4700E2A6B7 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
