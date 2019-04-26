@@ -39,17 +39,18 @@ class ReviewsViewController: UIViewController, UITableViewDelegate, UITableViewD
             } else {
                 //The object has been retrieved
                 self.bathroomName.text = bathroom!["location"] as! String
-                print(bathroom!["rating"])
                 self.bathroomRatingLabel.text = String(bathroom!["rating"] as! Int)
                 let imageFile = bathroom!["image"] as! PFFileObject
                 let urlString = imageFile.url!
                 let url = URL(string: urlString)!
                 self.bathroomImage.af_setImage(withURL: url)
-                let reviewQuery = PFQuery(className: "Bathrooms")
+                let reviewQuery = PFQuery(className: "Reviews")
+                print(bathroom?.objectId)
                 reviewQuery.whereKey("bathroomID", equalTo: bathroom?.objectId)
-                reviewQuery.findObjectsInBackground(block: { ([PFObject]?, <#Error?#>) in
-                    <#code#>
-                })
+                reviewQuery.findObjectsInBackground{(reviews:[PFObject]?, error) in
+                    let reviews = reviews
+                    print(reviews)
+                }
             }
         }
 
