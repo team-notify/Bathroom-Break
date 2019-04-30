@@ -13,23 +13,33 @@ import AlamofireImage
 class ReviewsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var bathroomName: UILabel!
-    
     @IBOutlet weak var bathroomRatingLabel: UILabel!
     @IBOutlet weak var bathroomImage: UIImageView!
+    @IBOutlet weak var tableView: UITableView!
     
+    var reviews = [PFObject]()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return reviews.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewCell") as! ReviewCell
+        let review = reviews[indexPath.row]
+        print(review["author"])
+        let user = review["author"] as! PFUser
+        cell.nameLabel.text = user.username as! String
+        cell.contentLabel.text = review["content"] as! String
         return cell
     }
-    
-
     override func viewDidLoad() {
+        tableView.delegate = self
+        tableView.dataSource = self
         super.viewDidLoad()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         let query = PFQuery(className: "Bathrooms")
         let newID = UserDefaults.standard.string(forKey: "bathroomID")
         query.getObjectInBackground(withId: newID!) { (bathroom: PFObject?, error: Error?) in
@@ -45,11 +55,12 @@ class ReviewsViewController: UIViewController, UITableViewDelegate, UITableViewD
                 let url = URL(string: urlString)!
                 self.bathroomImage.af_setImage(withURL: url)
                 let reviewQuery = PFQuery(className: "Reviews")
-                print(bathroom?.objectId)
                 reviewQuery.whereKey("bathroomID", equalTo: bathroom?.objectId)
+                reviewQuery.includeKeys(["author", "content"])
                 reviewQuery.findObjectsInBackground{(reviews:[PFObject]?, error) in
-                    let reviews = reviews
-                    print(reviews)
+                    self.reviews = reviews!
+                    self.tableView.reloadData()
+
                 }
             }
         }

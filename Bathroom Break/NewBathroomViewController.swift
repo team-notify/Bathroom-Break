@@ -59,6 +59,7 @@ class NewBathroomViewController: UIViewController, UIImagePickerControllerDelega
                 let review = PFObject(className: "Reviews")
                 review["content"] = self.reviewTextField.text!
                 review["bathroomID"] = bathroom.objectId
+                review["author"] = PFUser.current()!
                 review.saveInBackground()
                 self.performSegue(withIdentifier: "createdBathroomSegue", sender: nil)
                 print("saved")
